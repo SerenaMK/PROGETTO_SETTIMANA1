@@ -6,6 +6,7 @@ body {
     color: #393d41;
     font-size: 1.2rem;
     line-height: 1.65;
+    letter-spacing: 0.5px;
 }
 
 h1, h2, h3 {
@@ -14,13 +15,19 @@ h1, h2, h3 {
     line-height: 1.5;
 }
 
-p {
-    letter-spacing: 0.5px;
+h3 {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .monocolore {
     display: block;
     padding: 35px;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 
@@ -46,7 +53,8 @@ h1 {
 #corso {
     background-image: url("../images/banner.jpg");
     background-color: gray;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     height: fit-content;
     padding-bottom: 40px;
 }
@@ -54,21 +62,28 @@ h1 {
 #pulsante {
     background-color: #f04c2f;
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    color: white;
     font-weight: bold;
+    text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     display: inline;
-    padding: 15px 30px;
+    padding: 14px 30px;
     border-radius: 5px;
 }
 
-#pulsante a {
-    color: white;
-    text-decoration: none;
+#pulsante {
 }
 
 
 /* MAIN */
+
+main h3 {
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
 
 h2 {
     font-size: 1.1em;
@@ -101,10 +116,12 @@ main p {
 #garanzia h2 {
     font-size: 1.9em;
     color: white;
+    margin-bottom: 15px;
 }
 
 blockquote {
     font-style: italic;
+    font-size: 1.05rem;
     margin-bottom: 25px;
 }
 
@@ -114,14 +131,14 @@ figcaption {
 }
 
 cite {
-    font-size: 0.7em;
+    font-size: 0.65em;
 }
 
 
 /* ASIDE */
 
 aside {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 80px;
     margin-left: 25px;
     margin-right: 25px;
@@ -131,22 +148,20 @@ aside div {
     border: 1px solid #dee1e3;
     border-radius: 5px;
     margin: 30px auto;
-    min-width: 400px;
-    max-width: 40%;
+    width: 100%;
+    max-width: 600px;
 }
 
 aside img {
     width: 100%;
 }
 
-aside p {
-    padding: 0px 30px 40px;
+aside h3 {
+    font-size: 1em;
 }
 
-h3 {
-    font-size: 1.1em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+aside p {
+    padding: 0px 30px 40px;
 }
 
 
@@ -171,7 +186,7 @@ footer a {
 hr {
     border: none;
     border-top: 1px solid #c8e7f0;
-    width: 250px;
+    width: 200px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
